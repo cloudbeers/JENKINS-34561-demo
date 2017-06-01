@@ -1,5 +1,7 @@
-echo 'Hello!'
-node {
-  checkout scm
-  sh 'ls'
+stage('all') {
+  echo 'Hello!'
+  node {
+    checkout scm
+    sh 'ls'
+  }
 }
